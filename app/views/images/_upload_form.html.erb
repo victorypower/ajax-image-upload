@@ -1,0 +1,8 @@
+<%= error_messages_for :image %>
+
+<% form_for(:image, :url => collection_url, :html => { :multipart => true, :target => "upload_frame"}) do |f| %>
+  <div id="upload_form">
+    <%= render :partial => "form", :locals => { :f => f } %>
+  </div>
+    <%= submit_tag "Upload Image" %>
+<% end %>

@@ -1,0 +1,22 @@
+<h1>Listing Images</h1>
+
+  <%- @images.each do |image|%>
+      <td><%= image_tag(image.public_filename("thumb")) %></td>
+    
+      <td><%=link_to 'Show', object_url(image) %></td>
+      <td><%=link_to 'Edit', edit_object_url(image) %></td>
+      <td><%=link_to 'Destroy', object_url(image), :confirm => 'Are you sure?', :method => :delete %></td>
+  <% end %>
+<br/>
+
+<%= error_messages_for :image %>
+
+<% form_for(:image, :url => collection_url, :html => { :multipart => true, :target => "upload_frame"}) do |f| %>
+  <div id="upload_form">
+    <%= render :partial => "form", :locals => { :f => f } %>
+  </div>
+    <%= submit_tag "Upload Image" %>
+<% end %>
+<iframe id="upload_frame" name="upload_frame" style="display: none"></iframe>
+
+<%= link_to 'New Image', new_object_url %>
