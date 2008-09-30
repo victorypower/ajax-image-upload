@@ -2,6 +2,5 @@
 
 <% form_for(:image, :url => collection_url, :html => { :multipart => true, :target => "upload_frame", :id => "upload_form"}) do |f| %>
     <%= render :partial => "form", :locals => { :f => f } %>
-    <%= submit_tag "Upload New Image" %>
 <% end %>
-<%= observe_field :image_uploaded_data %>
+<%= observe_field :image_uploaded_data, :function => "$('upload_form').submit()" %>
