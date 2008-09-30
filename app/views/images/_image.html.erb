@@ -1,4 +1,4 @@
 <div style="float:left;padding:5px;" id="image[<%= image.id %>]">
-<%=link_to image_tag(image.public_filename("thumb")), object_url(image) %> <br />
-<%=link_to 'Delete', object_url(image), :confirm => 'Are you sure?', :method => :delete %>
+<%= link_to image_tag(image.public_filename("thumb")), object_url(image) %> <br />
+<%= link_to_remote 'Delete', :url => object_url(image), :confirm => 'Are you sure?', :method => :delete %>
 </div>

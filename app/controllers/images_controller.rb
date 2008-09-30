@@ -13,6 +13,8 @@ class ImagesController < ResourceController::Base
 	    end
 	end
 	
+	destroy.wants.js
+	
 	private
 	def collection
 		@collection = Image.real
