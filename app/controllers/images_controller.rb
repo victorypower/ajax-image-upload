@@ -5,10 +5,10 @@ class ImagesController < ResourceController::Base
 	create.wants.html do
 		responds_to_parent do
 	      render :update do |page|
-	        page.replace_html 'upload_form', :partial => 'upload_form', 
-	        								 :locals => { :collection_url => collection_url },
-	        								 :layout => false
-	        page.insert_html :top, 'images', :partial => @image
+	        page['upload_form'].reset
+	        page.insert_html :bottom, "images", :partial => @image
+	        page.visual_effect :appear, "image[#{@image.id}]"
+	        
 	      end
 	    end
 	end

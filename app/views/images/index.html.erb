@@ -1,16 +1,9 @@
-<h1>Listing Images</h1>
+<h1>Ajax Image Uploading</h1>
 <div id="images">
   <%= render :partial => "image", :collection => @images %>
  </div>
 <br/>
-
-<div id="upload_form">
-<%= error_messages_for :image %>
-<% form_for(:image, :url => collection_url, :html => { :multipart => true, :target => "upload_frame"}) do |f| %>
-    <%= render :partial => "form", :locals => { :f => f } %>
-    <%= submit_tag "Upload Image" %>
-<% end %>
+<div style="clear:both;padding-top:20px;">
+<%= render :partial => 'upload_form', :locals => { :collection_url => collection_url } %>
 </div>
 <iframe id="upload_frame" name="upload_frame" style="display: none"></iframe>
-
-<%= link_to 'New Image', new_object_url %>
