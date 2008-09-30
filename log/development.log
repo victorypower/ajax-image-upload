@@ -2157,3 +2157,1299 @@ Rendering images/index
   [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
 Rendered images/_form (0.00000)
 Completed in 0.11800 (8 reqs/sec) | Rendering: 0.00400 (3%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:14:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdU--29463e753cec4fca8efc945ce38bd84055d30f22
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.35000 (2 reqs/sec) | Rendering: 0.00700 (1%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:14:22) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9996-1>}}
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:14:23', 'BLUE.jpg', 200, NULL, 250, '2008-09-30 20:14:23')[0m
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 28) LIMIT 1[0m
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 11067, 'small', '2008-09-30 20:14:23', 'BLUE_small.jpg', 8, 28, 10, '2008-09-30 20:14:23')[0m
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 28) LIMIT 1[0m
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 11067, 'thumb', '2008-09-30 20:14:23', 'BLUE_thumb.jpg', 80, 28, 100, '2008-09-30 20:14:23')[0m
+Rendered images/_form (0.00000)
+Rendered images/_upload_form (0.00200)
+Completed in 0.76400 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:14:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.12900 (7 reqs/sec) | Rendering: 0.01200 (9%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:15:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.13900 (7 reqs/sec) | Rendering: 0.01500 (10%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:15:22) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9996-2>}}
+  [4;36;1mImage Create (0.002000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:15:22', 'Novel-Studios-_.jpg', 200, NULL, 250, '2008-09-30 20:15:22')[0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 31) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 19402, 'small', '2008-09-30 20:15:22', 'Novel-Studios-__small.jpg', 8, 31, 10, '2008-09-30 20:15:22')[0m
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 31) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 19402, 'thumb', '2008-09-30 20:15:22', 'Novel-Studios-__thumb.jpg', 80, 31, 100, '2008-09-30 20:15:22')[0m
+Rendered images/_form (0.00000)
+Rendered images/_upload_form (0.00200)
+Completed in 0.52800 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:15:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.14000 (7 reqs/sec) | Rendering: 0.01300 (9%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:16:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;36;1mImage Load (0.002000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.15100 (6 reqs/sec) | Rendering: 0.01400 (9%) | DB: 0.00200 (1%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:16:36) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9996-1>}}
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:16:36', 'bg.jpg', 200, NULL, 250, '2008-09-30 20:16:36')[0m
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 34) LIMIT 1[0m
+  [4;35;1mImage Create (0.000000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 2615, 'small', '2008-09-30 20:16:36', 'bg_small.jpg', 8, 34, 10, '2008-09-30 20:16:36')[0m
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 34) LIMIT 1[0m
+  [4;35;1mImage Create (0.000000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 2615, 'thumb', '2008-09-30 20:16:36', 'bg_thumb.jpg', 80, 34, 100, '2008-09-30 20:16:36')[0m
+Completed in 0.49000 (2 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:16:36) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.12800 (7 reqs/sec) | Rendering: 0.01500 (11%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:18:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;35;1mImage Load (0.002000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.24800 (4 reqs/sec) | Rendering: 0.11300 (45%) | DB: 0.00200 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#destroy (for 127.0.0.1 at 2008-09-30 13:18:11) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "_method"=>"delete", "action"=>"destroy", "id"=>"34", "controller"=>"images"}
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 34) [0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images".parent_id = 34) [0m
+  [4;36;1mImage Destroy (0.001000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 35
+[0m
+  [4;35;1mImage Destroy (0.001000)[0m   [0m DELETE FROM "images"
+ WHERE "id" = 36
+[0m
+  [4;36;1mImage Destroy (0.000000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 34
+[0m
+Redirected to http://localhost:3000/images
+Completed in 0.14400 (6 reqs/sec) | DB: 0.00300 (2%) | 302 Found [http://localhost/images/34]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:18:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdG--75c7a8a612894836f2563bcca0657e4983006b62
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;35;1mImage Load (0.002000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.13700 (7 reqs/sec) | Rendering: 0.01200 (8%) | DB: 0.00200 (1%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#destroy (for 127.0.0.1 at 2008-09-30 13:18:12) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdU--29463e753cec4fca8efc945ce38bd84055d30f22
+  Parameters: {"authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "_method"=>"delete", "action"=>"destroy", "id"=>"31", "controller"=>"images"}
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 31) [0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images".parent_id = 31) [0m
+  [4;36;1mImage Destroy (0.001000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 32
+[0m
+  [4;35;1mImage Destroy (0.000000)[0m   [0m DELETE FROM "images"
+ WHERE "id" = 33
+[0m
+  [4;36;1mImage Destroy (0.000000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 31
+[0m
+Redirected to http://localhost:3000/images
+Completed in 0.14900 (6 reqs/sec) | DB: 0.00300 (2%) | 302 Found [http://localhost/images/31]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:18:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdG--75c7a8a612894836f2563bcca0657e4983006b62
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.14200 (7 reqs/sec) | Rendering: 0.01300 (9%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#destroy (for 127.0.0.1 at 2008-09-30 13:18:14) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdU--29463e753cec4fca8efc945ce38bd84055d30f22
+  Parameters: {"authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "_method"=>"delete", "action"=>"destroy", "id"=>"28", "controller"=>"images"}
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 28) [0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images".parent_id = 28) [0m
+  [4;36;1mImage Destroy (0.001000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 29
+[0m
+  [4;35;1mImage Destroy (0.000000)[0m   [0m DELETE FROM "images"
+ WHERE "id" = 30
+[0m
+  [4;36;1mImage Destroy (0.000000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 28
+[0m
+Redirected to http://localhost:3000/images
+Completed in 0.17800 (5 reqs/sec) | DB: 0.00300 (1%) | 302 Found [http://localhost/images/28]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:18:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdG--75c7a8a612894836f2563bcca0657e4983006b62
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00100)
+Completed in 0.23400 (4 reqs/sec) | Rendering: 0.00600 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:18:21) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdU--29463e753cec4fca8efc945ce38bd84055d30f22
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9996-1>}}
+  [4;36;1mImage Create (0.002000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:18:22', 'BLUE_.jpg', 200, NULL, 250, '2008-09-30 20:18:22')[0m
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 37) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'small', '2008-09-30 20:18:22', 'BLUE__small.jpg', 8, 37, 10, '2008-09-30 20:18:22')[0m
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 37) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'thumb', '2008-09-30 20:18:22', 'BLUE__thumb.jpg', 80, 37, 100, '2008-09-30 20:18:22')[0m
+Completed in 0.57200 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:18:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.14300 (6 reqs/sec) | Rendering: 0.01200 (8%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:18:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.12900 (7 reqs/sec) | Rendering: 0.01200 (9%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:18:45) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9996-3>}}
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:18:45', 'BLUE_.jpg', 200, NULL, 250, '2008-09-30 20:18:45')[0m
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 40) LIMIT 1[0m
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'small', '2008-09-30 20:18:46', 'BLUE__small.jpg', 8, 40, 10, '2008-09-30 20:18:46')[0m
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 40) LIMIT 1[0m
+  [4;35;1mImage Create (0.000000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'thumb', '2008-09-30 20:18:46', 'BLUE__thumb.jpg', 80, 40, 100, '2008-09-30 20:18:46')[0m
+Completed in 0.65400 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:18:46) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering images/index
+  [4;36;1mImage Load (0.002000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.12700 (7 reqs/sec) | Rendering: 0.01200 (9%) | DB: 0.00200 (1%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:20:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+
+
+ActionView::TemplateError (No expansion found for :defaults) on line #8 of layouts/application.html.erb:
+5: <head>
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>Exaas: <%= controller.action_name %></title>
+8:   <%= stylesheet_link_tag 'scaffold', :defaults %>
+9: </head>
+10: <body>
+11: 
+
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:596:in `determine_source'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:588:in `expand_stylesheet_sources'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:587:in `collect'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:587:in `expand_stylesheet_sources'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:376:in `stylesheet_link_tag'
+    app/views/layouts/application.html.erb:8:in `_run_erb_47app47views47layouts47application46html46erb'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:342:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:342:in `execute'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template.rb:35:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template.rb:22:in `render_template'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:248:in `render_file'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:131:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/resource_controller-0.5.3/lib/resource_controller/helpers/internal.rb:12:in `response_for'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/resource_controller-0.5.3/lib/resource_controller/actions.rb:7:in `index'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:1166:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:579:in `call_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/InstantRails/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/query_cache.rb:8:in `cache'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `process_without_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/session_management.rb:130:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:20:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+
+
+ActionView::TemplateError (No expansion found for :default) on line #8 of layouts/application.html.erb:
+5: <head>
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>Exaas: <%= controller.action_name %></title>
+8:   <%= stylesheet_link_tag 'scaffold', :default %>
+9: </head>
+10: <body>
+11: 
+
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:596:in `determine_source'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:588:in `expand_stylesheet_sources'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:587:in `collect'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:587:in `expand_stylesheet_sources'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/helpers/asset_tag_helper.rb:376:in `stylesheet_link_tag'
+    app/views/layouts/application.html.erb:8:in `_run_erb_47app47views47layouts47application46html46erb'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:342:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:342:in `execute'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template.rb:35:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template.rb:22:in `render_template'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:248:in `render_file'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:131:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/resource_controller-0.5.3/lib/resource_controller/helpers/internal.rb:12:in `response_for'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/resource_controller-0.5.3/lib/resource_controller/actions.rb:7:in `index'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:1166:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:579:in `call_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/InstantRails/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/query_cache.rb:8:in `cache'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `process_without_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/session_management.rb:130:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:21:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+
+
+ActionView::TemplateError (undefined local variable or method `defaults' for #<ActionView::Base:0x604afa0>) on line #8 of layouts/application.html.erb:
+5: <head>
+6:   <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+7:   <title>Exaas: <%= controller.action_name %></title>
+8:   <%= stylesheet_link_tag 'scaffold', defaults %>
+9: </head>
+10: <body>
+11: 
+
+    app/views/layouts/application.html.erb:8:in `_run_erb_47app47views47layouts47application46html46erb'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:342:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:342:in `execute'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template.rb:35:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/template.rb:22:in `render_template'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_view/base.rb:248:in `render_file'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:51:in `render'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:131:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:131:in `custom'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:160:in `call'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:160:in `respond'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:154:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:154:in `respond'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/mime_responds.rb:107:in `respond_to'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/resource_controller-0.5.3/lib/resource_controller/helpers/internal.rb:12:in `response_for'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/resource_controller-0.5.3/lib/resource_controller/actions.rb:7:in `index'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:1166:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:579:in `call_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/InstantRails/ruby/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activerecord-2.1.1/lib/active_record/query_cache.rb:8:in `cache'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `send'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:529:in `process_without_filters'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/session_management.rb:130:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/base.rb:389:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:22:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.15000 (6 reqs/sec) | Rendering: 0.01900 (12%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:22:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#destroy (for 127.0.0.1 at 2008-09-30 13:22:08) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "_method"=>"delete", "action"=>"destroy", "id"=>"40", "controller"=>"images"}
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 40) [0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images".parent_id = 40) [0m
+  [4;36;1mImage Destroy (0.002000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 41
+[0m
+  [4;35;1mImage Destroy (0.000000)[0m   [0m DELETE FROM "images"
+ WHERE "id" = 42
+[0m
+  [4;36;1mImage Destroy (0.000000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 40
+[0m
+Redirected to http://localhost:3000/images
+Completed in 0.15900 (6 reqs/sec) | DB: 0.00400 (2%) | 302 Found [http://localhost/images/40]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:22:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdG--75c7a8a612894836f2563bcca0657e4983006b62
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.13600 (7 reqs/sec) | Rendering: 0.01400 (10%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:22:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdU--29463e753cec4fca8efc945ce38bd84055d30f22
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#destroy (for 127.0.0.1 at 2008-09-30 13:22:10) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "_method"=>"delete", "action"=>"destroy", "id"=>"37", "controller"=>"images"}
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."id" = 37) [0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images".parent_id = 37) [0m
+  [4;36;1mImage Destroy (0.001000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 38
+[0m
+  [4;35;1mImage Destroy (0.001000)[0m   [0m DELETE FROM "images"
+ WHERE "id" = 39
+[0m
+  [4;36;1mImage Destroy (0.000000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 37
+[0m
+Redirected to http://localhost:3000/images
+Completed in 0.15100 (6 reqs/sec) | DB: 0.00400 (2%) | 302 Found [http://localhost/images/37]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:22:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdG--75c7a8a612894836f2563bcca0657e4983006b62
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.12800 (7 reqs/sec) | Rendering: 0.00600 (4%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:22:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdU--29463e753cec4fca8efc945ce38bd84055d30f22
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:22:11) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>""}}
+Rendering template within layouts/application
+Rendering images/new
+Rendered images/_form (0.00100)
+Completed in 0.13600 (7 reqs/sec) | Rendering: 0.00800 (5%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:22:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:22:16) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9364-1>}}
+  [4;36;1mImage Create (0.001000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:22:17', 'BLUE_.jpg', 200, NULL, 250, '2008-09-30 20:22:17')[0m
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 43) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'small', '2008-09-30 20:22:17', 'BLUE__small.jpg', 8, 43, 10, '2008-09-30 20:22:17')[0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 43) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'thumb', '2008-09-30 20:22:17', 'BLUE__thumb.jpg', 80, 43, 100, '2008-09-30 20:22:17')[0m
+Completed in 0.57300 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:22:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00100)
+Completed in 0.12900 (7 reqs/sec) | Rendering: 0.01300 (10%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:22:32) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.15500 (6 reqs/sec) | Rendering: 0.01400 (9%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:22:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#destroy (for 127.0.0.1 at 2008-09-30 13:22:35) [DELETE]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "_method"=>"delete", "action"=>"destroy", "id"=>"43", "controller"=>"images"}
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."id" = 43) [0m
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images".parent_id = 43) [0m
+  [4;35;1mImage Destroy (0.001000)[0m   [0m DELETE FROM "images"
+ WHERE "id" = 44
+[0m
+  [4;36;1mImage Destroy (0.000000)[0m   [0;1m DELETE FROM "images"
+ WHERE "id" = 45
+[0m
+  [4;35;1mImage Destroy (0.000000)[0m   [0m DELETE FROM "images"
+ WHERE "id" = 43
+[0m
+Redirected to http://localhost:3000/images
+Completed in 0.15300 (6 reqs/sec) | DB: 0.00300 (1%) | 302 Found [http://localhost/images/43]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:22:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdG--75c7a8a612894836f2563bcca0657e4983006b62
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.24700 (4 reqs/sec) | Rendering: 0.11200 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:22:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgcmVtb3ZlZCEGOgpAdXNlZHsG
+OwdU--29463e753cec4fca8efc945ce38bd84055d30f22
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:22:39) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9364-1>}}
+  [4;35;1mImage Create (0.002000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:22:39', 'BLUE_.jpg', 200, NULL, 250, '2008-09-30 20:22:39')[0m
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 46) LIMIT 1[0m
+  [4;35;1mImage Create (0.000000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'small', '2008-09-30 20:22:39', 'BLUE__small.jpg', 8, 46, 10, '2008-09-30 20:22:39')[0m
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 46) LIMIT 1[0m
+  [4;35;1mImage Create (0.000000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 10742, 'thumb', '2008-09-30 20:22:39', 'BLUE__thumb.jpg', 80, 46, 100, '2008-09-30 20:22:39')[0m
+Rendered images/_form (0.00000)
+Rendered images/_upload_form (0.00100)
+Completed in 0.56200 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:22:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_form (0.00000)
+Completed in 0.12800 (7 reqs/sec) | Rendering: 0.01300 (10%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:25:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+  [4;36;1mImage Load (0.001000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_image (0.00800)
+Rendered images/_form (0.00000)
+Completed in 0.16600 (6 reqs/sec) | Rendering: 0.02400 (14%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:25:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:26:51) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;35;1mSQL (0.000000)[0m   [0mSELECT count(*) AS count_all FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_image (0.10300)
+Rendered images/_form (0.00000)
+Completed in 0.25600 (3 reqs/sec) | Rendering: 0.11600 (45%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-09-30 13:26:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {}
+
+
+ActionController::RoutingError (No route matches "/stylesheets/scaffold.css" with {:method=>:get}):
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/recognition_optimisation.rb:67:in `recognize_path'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/routing/route_set.rb:384:in `recognize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:76:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/../lib/mongrel/rails.rb:74:in `process'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:159:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:158:in `process_client'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:285:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `initialize'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `new'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel.rb:268:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:282:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `each'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/configurator.rb:281:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:128:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/lib/mongrel/command.rb:212:in `run'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/mongrel-1.1.2-x86-mswin32/bin/mongrel_rails:281
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:503:in `load'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/servers/mongrel.rb:64
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:355:in `new_constants_in'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/activesupport-2.1.1/lib/active_support/dependencies.rb:510:in `require'
+    C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/rails-2.1.1/lib/commands/server.rb:39
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    C:/InstantRails/ruby/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering C:/InstantRails/ruby/lib/ruby/gems/1.8/gems/actionpack-2.1.1/lib/action_controller/templates/rescues/layout.erb (not_found)
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:26:55) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--cbc3be594bdc70a81526002226ef7594fc897592
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9364-1>}}
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:26:56', 'Novel-Studios-_.jpg', 200, NULL, 250, '2008-09-30 20:26:56')[0m
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 49) LIMIT 1[0m
+  [4;35;1mImage Create (0.001000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 19402, 'small', '2008-09-30 20:26:56', 'Novel-Studios-__small.jpg', 8, 49, 10, '2008-09-30 20:26:56')[0m
+  [4;36;1mImage Load (0.000000)[0m   [0;1mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 49) LIMIT 1[0m
+  [4;35;1mImage Create (0.000000)[0m   [0mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 19402, 'thumb', '2008-09-30 20:26:56', 'Novel-Studios-__thumb.jpg', 80, 49, 100, '2008-09-30 20:26:56')[0m
+Rendered images/_form (0.00000)
+Rendered images/_upload_form (0.00200)
+Rendered images/_image (0.00100)
+Completed in 0.53100 (1 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#index (for 127.0.0.1 at 2008-09-30 13:26:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdG--9762d7e1586c74a134cf90086db8bc40897ddf67
+  Parameters: {"action"=>"index", "controller"=>"images"}
+Rendering template within layouts/application
+Rendering images/index
+  [4;36;1mSQL (0.000000)[0m   [0;1mSELECT count(*) AS count_all FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+  [4;35;1mImage Load (0.001000)[0m   [0mSELECT * FROM "images" WHERE ("images"."parent_id" IS NULL) [0m
+Rendered images/_image (0.00400)
+Rendered images/_image (0.00100)
+Rendered images/_form (0.00000)
+Completed in 0.13100 (7 reqs/sec) | Rendering: 0.01700 (12%) | DB: 0.00100 (0%) | 200 OK [http://localhost/images]
+
+
+Processing ImagesController#create (for 127.0.0.1 at 2008-09-30 13:27:23) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlODg2ODRkOTEyODBiZjkxMmY2N2YwOTZjZjFjMzMy
+YjAiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlIhpTdWNjZXNzZnVsbHkgY3JlYXRlZCEGOgpAdXNlZHsG
+OwdU--b54f3491d28e50a46dd8bcbe4f9b200f5ae0df90
+  Parameters: {"commit"=>"Upload Image", "authenticity_token"=>"db41442e498af27f8add50a10c59be0262971d12", "action"=>"create", "controller"=>"images", "image"=>{"uploaded_data"=>#<File:C:/Users/Mel/AppData/Local/Temp/CGI9364-3>}}
+  [4;36;1mImage Create (0.001000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 0, NULL, '2008-09-30 20:27:24', '8.jpg', 200, NULL, 250, '2008-09-30 20:27:24')[0m
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'small' AND "images"."parent_id" = 52) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 8885, 'small', '2008-09-30 20:27:24', '8_small.jpg', 8, 52, 10, '2008-09-30 20:27:24')[0m
+  [4;35;1mImage Load (0.000000)[0m   [0mSELECT * FROM "images" WHERE ("images"."thumbnail" = 'thumb' AND "images"."parent_id" = 52) LIMIT 1[0m
+  [4;36;1mImage Create (0.000000)[0m   [0;1mINSERT INTO "images" ("content_type", "size", "thumbnail", "updated_at", "filename", "height", "parent_id", "width", "created_at") VALUES('image/jpeg', 8885, 'thumb', '2008-09-30 20:27:24', '8_thumb.jpg', 80, 52, 100, '2008-09-30 20:27:24')[0m
+Rendered images/_form (0.00000)
+Rendered images/_upload_form (0.00100)
+Rendered images/_image (0.00200)
+Completed in 0.48500 (2 reqs/sec) | Rendering: 0.00000 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/images]

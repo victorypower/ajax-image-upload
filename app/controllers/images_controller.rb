@@ -8,6 +8,7 @@ class ImagesController < ResourceController::Base
 	        page.replace_html 'upload_form', :partial => 'upload_form', 
 	        								 :locals => { :collection_url => collection_url },
 	        								 :layout => false
+	        page.insert_html :top, 'images', :partial => @image
 	      end
 	    end
 	end
