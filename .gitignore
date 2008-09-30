@@ -1,1 +1,3 @@
 /public/images/0000/
+db/*.sqlite3
+log/*.log
